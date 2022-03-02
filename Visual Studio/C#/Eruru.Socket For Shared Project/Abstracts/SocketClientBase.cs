@@ -78,6 +78,7 @@ namespace Eruru.Socket {
 			}
 
 		}
+		public object Tag { get; set; }
 
 		protected readonly EventLock<string> EventLock = new EventLock<string> ();
 
