@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fd48d5cc-f501-44c1-b85b-6f9d4ef5989d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Eruru.Socket</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BufferManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventLock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EventLockEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SocketAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SocketClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Abstracts\SocketClientBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\SocketServerState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\SocketClientState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\SocketProtocolType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SocketServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SocketServerClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Enums\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Abstracts\" />
+  </ItemGroup>
+</Project>
